@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sustainability Daily</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <!-- Simple logo you can replace with an <img> later -->
+      <div class="logo-icon">SD</div>
+      <div class="logo-text">
+        <span class="logo-title">Sustainability Daily</span>
+        <span class="logo-subtitle">Small steps. Big impact.</span>
+      </div>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-icon theme-icon-light">☀</span>
+      <span class="theme-icon theme-icon-dark">🌙</span>
+    </button>
+  </header>
+
+  <main class="main-layout">
+    <!-- Left: Daily tip & notification -->
+    <section class="panel panel-highlight">
+      <h1 class="section-title">Your tip of the moment</h1>
+      <p class="section-subtitle">
+        Discover a quick action you can take today.
+      </p>
+
+      <div class="tip-card" id="tipCard">
+        <div class="tip-category" id="tipCategory">General</div>
+        <p class="tip-text" id="tipText">
+          Click the button below to get a sustainable tip.
+        </p>
+      </div>
+
+      <div class="tip-actions">
+        <button class="btn primary" id="newTipBtn">New random tip</button>
+        <button class="btn ghost" id="notifyTipBtn">
+          Send this tip as a notification
+        </button>
+      </div>
+
+      <p class="tip-note">
+        Notifications rely on your browser’s permission and work while this page is open.
+      </p>
+    </section>
+
+    <!-- Right: Categories -->
+    <section class="panel panel-categories">
+      <h2 class="section-title">Explore sustainability by topic</h2>
+
+      <div class="category-grid">
+        <a href="category-energy.html" class="category-card">
+          <div class="category-icon">⚡</div>
+          <div class="category-content">
+            <h3 class="category-title">Energy</h3>
+            <p class="category-description">
+              Cut electricity use, switch to efficient lighting, and reduce standby power.
+            </p>
+          </div>
+        </a>
+
+        <a href="category-fashion.html" class="category-card">
+          <div class="category-icon">👕</div>
+          <div class="category-content">
+            <h3 class="category-title">Fashion</h3>
+            <p class="category-description">
+              Build a capsule wardrobe, repair clothing, and shop second-hand.
+            </p>
+          </div>
+        </a>
+
+        <a href="category-food.html" class="category-card">
+          <div class="category-icon">🥗</div>
+          <div class="category-content">
+            <h3 class="category-title">Food</h3>
+            <p class="category-description">
+              Eat more plants, avoid food waste, and buy local when possible.
+            </p>
+          </div>
+        </a>
+
+        <a href="category-transport.html" class="category-card">
+          <div class="category-icon">🚲</div>
+          <div class="category-content">
+            <h3 class="category-title">Transport</h3>
+            <p class="category-description">
+              Walk, cycle, share rides, and choose lower‑impact travel options.
+            </p>
+          </div>
+        </a>
+
+        <a href="category-water.html" class="category-card">
+          <div class="category-icon">💧</div>
+          <div class="category-content">
+            <h3 class="category-title">Water</h3>
+            <p class="category-description">
+              Shorter showers, fix leaks, and reuse water where safe.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Sustainability Daily</span>
+    <span class="footer-right">Built for small daily actions.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
