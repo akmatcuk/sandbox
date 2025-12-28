@@ -308,8 +308,8 @@ body.dark .tip-category {
 .tip-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 6px;
+  gap: 4px;
+  margin-top: 4px;
 }
 
 .btn {
