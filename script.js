@@ -117,6 +117,29 @@ function getRandomTip() {
   return TIPS[index];
 }
 
+const TIP_OF_DAY_KEY = "sustainability-daily-tip";
+const TIP_OF_DAY_DATE_KEY = "sustainability-daily-tip-date";
+
+function getTipOfTheDay() {
+  const today = new Date().toDateString();
+  const savedDate = localStorage.getItem(TIP_OF_DAY_DATE_KEY);
+  const savedTip = localStorage.getItem(TIP_OF_DAY_KEY);
+
+  // If we already have today's tip, use it
+  if (savedDate === today && savedTip) {
+    return JSON.parse(savedTip);
+  }
+
+  // Otherwise generate a new one
+  const newTip = getRandomTip();
+
+  // Save it for the rest of the day
+  localStorage.setItem(TIP_OF_DAY_KEY, JSON.stringify(newTip));
+  localStorage.setItem(TIP_OF_DAY_DATE_KEY, today);
+
+  return newTip;
+}
+
 function renderRandomTip() {
   const tipCard = $("#tipCard");
   const tipTextEl = $("#tipText");
@@ -124,7 +147,7 @@ function renderRandomTip() {
 
   if (!tipCard || !tipTextEl || !tipCategoryEl) return;
 
-  const tip = getRandomTip();
+  const tip = getTipOfTheDay();
   tipTextEl.textContent = tip.text;
   tipCategoryEl.textContent = tip.category;
 
@@ -201,7 +224,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const notifyTipBtn = $("#notifyTipBtn");
 
   if (newTipBtn) {
-    newTipBtn.addEventListener("click", renderRandomTip);
     // Create an initial tip so the page never feels empty
     renderRandomTip();
   }
