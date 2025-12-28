@@ -30,8 +30,8 @@ const TIPS = [
     category: "Water",
   },
   {
-    text: "Bring your own bag when shopping to avoid disposable bags.",
-    category: "General",
+    text: "Bring your own bag when grocery shopping to avoid disposable bags.",
+    category: "Food",
   },
   {
     text: "Have one meat-free day each week to reduce your footprint.",
@@ -41,6 +41,19 @@ const TIPS = [
     text: "Walk or cycle short distances instead of driving.",
     category: "Transport",
   },
+  {
+    text: "Sort recyclables properly to avoid contamination.",
+    category: "Waste",
+  },
+  {
+    text: "Choose products with minimal or recyclable packaging.",
+    category: "Waste",
+  },
+  {
+    text: "Compost food scraps to reduce landfill waste.",
+    category: "Waste",
+  },
+
 ];
 
 // 2. Helpers
