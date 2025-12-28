@@ -219,14 +219,7 @@ function sendTipNotification() {
 document.addEventListener("DOMContentLoaded", () => {
   setCurrentYear();
   initThemeToggle();
-
-  const newTipBtn = $("#newTipBtn");
-  const notifyTipBtn = $("#notifyTipBtn");
-
-  if (newTipBtn) {
-    // Create an initial tip so the page never feels empty
-    renderRandomTip();
-  }
+  renderRandomTip();
 
   if (notifyTipBtn) {
     notifyTipBtn.addEventListener("click", sendTipNotification);
