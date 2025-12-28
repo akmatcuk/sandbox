@@ -216,6 +216,7 @@ body.dark .theme-icon-dark {
 }
 
 .panel-highlight {
+  order: 1;
   background: radial-gradient(circle at top right, #e0f7ea 0, var(--bg-elevated) 52%);
 }
 
@@ -224,6 +225,7 @@ body.dark .panel-highlight {
 }
 
 .panel-categories {
+  order: 2;
   overflow: hidden;
 }
 
