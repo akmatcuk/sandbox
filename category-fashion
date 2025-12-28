@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sustainability Daily – Energy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <div class="logo-icon">SD</div>
+      <div class="logo-text">
+        <span class="logo-title">Sustainability Daily</span>
+        <span class="logo-subtitle">Energy</span>
+      </div>
+    </div>
+
+    <nav class="top-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="category-energy.html" class="nav-link active">Energy</a>
+      <a href="category-fashion.html" class="nav-link">Fashion</a>
+      <a href="category-food.html" class="nav-link">Food</a>
+      <a href="category-transport.html" class="nav-link">Transport</a>
+      <a href="category-water.html" class="nav-link">Water</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-icon theme-icon-light">☀</span>
+      <span class="theme-icon theme-icon-dark">🌙</span>
+    </button>
+  </header>
+
+  <main class="main-single">
+    <section class="panel panel-highlight">
+      <h1 class="section-title">
+        Energy tips
+      </h1>
+      <p class="section-subtitle">
+        Simple changes at home and work can dramatically cut your energy impact.
+      </p>
+
+      <ul class="tips-list">
+        <li class="tips-list-item">
+          <h3 class="tips-list-title">Switch to LED or CFL bulbs</h3>
+          <p class="tips-list-text">
+            Replace old incandescent bulbs with efficient LEDs to save energy and money over time.
+          </p>
+        </li>
+        <li class="tips-list-item">
+          <h3 class="tips-list-title">Unplug devices you rarely use</h3>
+          <p class="tips-list-text">
+            Chargers, TVs, and consoles draw power even when idle. Use a power strip to easily switch them off.
+          </p>
+        </li>
+        <li class="tips-list-item">
+          <h3 class="tips-list-title">Use natural light when possible</h3>
+          <p class="tips-list-text">
+            Open curtains and blinds during the day instead of turning on lights.
+          </p>
+        </li>
+        <li class="tips-list-item">
+          <h3 class="tips-list-title">Adjust thermostat by 1–2 degrees</h3>
+          <p class="tips-list-text">
+            Small temperature changes can have a big effect on energy use, especially over months.
+          </p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Sustainability Daily</span>
+    <span class="footer-right">Energy: focused on reducing waste.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
